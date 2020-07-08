@@ -83,7 +83,7 @@ class Login extends Component {
                       <button className="btn" type="submit" name="submit" onClick={this.loginClicked}>Log in</button>
                     </span>  
 
-                    <a className="forgot" href="">Forgot password?</a>
+                    <span>Forgot password?</span>
                   </form>
                 </div> 
               </div> 
@@ -113,15 +113,15 @@ class Login extends Component {
 
           <nav className="footer-nav" role="navigation">
             <ul>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Support</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Press</a></li>
-              <li><a href="">Api</a></li>
-              <li><a href="">Jobs</a></li>
-              <li><a href="">Privacy</a></li>
-              <li><a href="">Terms</a></li>
-              <li><a href="">Directory</a></li>
+              <li><span>About Us</span></li>
+              <li><span>Support</span></li>
+              <li><span>Blog</span></li>
+              <li><span>Press</span></li>
+              <li><span>Api</span></li>
+              <li><span>Jobs</span></li>
+              <li><span>Privacy</span></li>
+              <li><span>Terms</span></li>
+              <li><span>Directory</span></li>
               <li>
                 <span className="language">Language
                   <select name="language" className="select" >
