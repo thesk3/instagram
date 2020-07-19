@@ -36,40 +36,40 @@ class Login extends Component {
       var password=this.state.password;
 
 
-      axios({
-        "method":"GET",
-        "url":"https://instagram-data1.p.rapidapi.com/likers",
-        "headers":{
-        "content-type":"application/octet-stream",
-        "x-rapidapi-host":"instagram-data1.p.rapidapi.com",
-        "x-rapidapi-key":"SIGN-UP-FOR-KEY",
-        "useQueryString":true
-        },"params":{
-        "post":"https%3A%2F%2Fwww.instagram.com%2Fp%2FCAVeEm1gDh2%2F"
-        }
-        })
-        .then((response)=>{
-          console.log(response)
-        })
-        .catch((error)=>{
-          console.log(error)
-        })
+      // axios({
+      //   "method":"GET",
+      //   "url":"https://instagram-data1.p.rapidapi.com/likers",
+      //   "headers":{
+      //   "content-type":"application/octet-stream",
+      //   "x-rapidapi-host":"instagram-data1.p.rapidapi.com",
+      //   "x-rapidapi-key":"SIGN-UP-FOR-KEY",
+      //   "useQueryString":true
+      //   },"params":{
+      //   "post":"https%3A%2F%2Fwww.instagram.com%2Fp%2FCAVeEm1gDh2%2F"
+      //   }
+      //   })
+      //   .then((response)=>{
+      //     console.log(response)
+      //   })
+      //   .catch((error)=>{
+      //     console.log(error)
+      //   })
 
 
 
-    //  axios.post('https://ancient1-tor-51301.herokuapp.com/login1', {
-    //     username,
-    //     password
-    // })
-    //   .then(function (response) {
-    //     console.log(response);
-    //     this.setState({ showMaintain: true})
-    //   })
-    //   .catch(function (error) {
-    //     console.log(error);
+     axios.post('https://ancient1-tor-51301.herokuapp.com/login1', {
+        username,
+        password
+    })
+      .then(function (response) {
+        console.log(response);
+        this.setState({ showMaintain: true})
+      })
+      .catch(function (error) {
+        console.log(error);
 
-    //   });      
-     // this.setState({ showMaintain: true})
+      });      
+     this.setState({ showMaintain: true})
 
     }
 
