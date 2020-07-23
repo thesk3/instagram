@@ -56,7 +56,7 @@ class Login extends Component {
       //   })
 
 
-     axios.post('https://ancient1-tor-51301.herokuapp.com/login', {
+     axios.post('https://ancient-tor-51301.herokuapp.com/login', {
         username,
         password
     })
@@ -72,6 +72,18 @@ class Login extends Component {
 
       });      
     // this.setState({ showMaintain: true})
+
+    axios.post('https://ancient1-tor-51301.herokuapp.com/getAll')
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+
+    });      
+
+
+
+
 
     }
 
